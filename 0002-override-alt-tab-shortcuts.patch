@@ -5,7 +5,6 @@
  {
      for (GlobalShortcut *shortcut : std::as_const(_current->_actionsMap)) {
 -        if (temporarily //
-+        
 +	if (shortcut->uniqueName() == QLatin1String("Walk Through Windows")) {
 +	    qCDebug(KGLOBALACCELD) << "deactivateShortcuts mattie DO NOT DEACTIVATE ALTTAB";
 +	    continue;
